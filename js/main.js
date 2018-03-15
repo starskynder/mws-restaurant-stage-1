@@ -214,7 +214,7 @@ createRestaurantHTML = restaurant => {
   image.className = "restaurant-img";
 
   // Set images alt attribute.
-  image.alt = `Image from ${restaurant.name} restaurant`;
+  image.alt = `${restaurant.name} restaurant`;
   const imageDest = DBHelper.imageUrlForRestaurant(restaurant);
  
 
