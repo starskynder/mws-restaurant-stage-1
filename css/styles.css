@@ -1,115 +1,594 @@
-@charset "utf-8";
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
 /* CSS Document */
 
-body,td,th,p{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
-	line-height: 1.5;
+body,
+html,
+nav {
+  height: 100%;
 }
-body {
-	background-color: #fdfdfd;
-	margin: 0;
-	position:relative;
+
+body,
+td,
+th,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
+  line-height: 1.5;
 }
-ul, li {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-	color: #333;
+
+body,
+.inside {
+  background-color: #fff;
+  width: 100%;
+  margin: auto;
+  position: relative;
 }
-a {
-	color: orange;
-	text-decoration: none;
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-a:hover, a:focus {
-	color: #3397db;
-	text-decoration: none;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
-a img{
-	border: none 0px #fff;
-}
-h1, h2, h3, h4, h5, h6 {
+
+ul,
+li {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 20px;
+  font-size: 1em;
+  color: #333;
 }
-article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
-#maincontent {
-  background-color: #f3f3f3;
+
+a:hover,
+a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a img {
+  border: none 0px #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Righteous", cursive;
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+#maincontent,
+.inside #maincontent {
+  background-color: #fff;
   min-height: 100%;
 }
-#footer {
-  background-color: #444;
-  color: #aaa;
-  font-size: 8pt;
+
+footer {
+  background-color: #88003b;
+  color: #fff;
+  font-size: 1.3em;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  max-width: 100%;
 }
+
 /* ====================== Navigation ====================== */
-nav {
+
+.main-title {
   width: 100%;
-  height: 80px;
-  background-color: #252831;
-  text-align:center;
-}
-nav h1 {
-  margin: auto;
-}
-nav h1 a {
+  min-width: 2em;
+  background-color: #88003b;
   color: #fff;
-  font-size: 14pt;
+  text-align: center;
+  z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2em;
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
+  text-decoration: none;
 }
-#breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: calc(50% - 80px);
+
+.main-title a:hover,
+.main-title a:focus {
+  color: #88003b;
+  background-color: rgb(247, 187, 214);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#breadcrumb,
+#navigation {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  font-size: 20px;
+  margin: 0;
 }
 
 /* Display list items side by side */
-#breadcrumb li {
-    display: inline;
+
+#breadcrumb li,
+#navigation li {
+  padding: 10px;
+}
+
+#navigation li {
+  padding-right: 10px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-#breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+
+#breadcrumb li + li:before {
+  padding: 8px;
+  color: #88003b;
+  content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
-#breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+
+#breadcrumb li a,
+#navigation li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #88003b;
+  border-radius: 5px;
 }
 
 /* Add a color on mouse-over */
-#breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+
+#breadcrumb li a:hover,
+#breadcrumb li a:focus,
+#navigation li a:hover,
+#navigation li a:focus {
+  background-color: rgb(247, 187, 214);
+  color: #000;
 }
+
 /* ====================== Map ====================== */
-#map {
+
+#map,
+.inside #map {
   height: 400px;
-  width: 100%;
+  max-width: 100%;
   background-color: #ccc;
+  border-top: 8px solid #88003b;
 }
+
 /* ====================== Restaurant Filtering ====================== */
+
 .filter-options {
-  width: 100%;
-  height: 50px;
-  background-color: #3397DB;
-  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 10px;
+  background-color: #88003b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .filter-options h2 {
   color: white;
   font-size: 1rem;
@@ -117,159 +596,450 @@ nav h1 a {
   line-height: 1;
   margin: 0 20px;
 }
-.filter-options select {
+
+#neighborhoods-select,
+#cuisines-select {
   background-color: white;
   border: 1px solid #fff;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 11pt;
   height: 35px;
   letter-spacing: 0;
   margin: 10px;
   padding: 0 10px;
   width: 200px;
+  border-radius: 5px;
 }
 
-/* ====================== Restaurant Listing ====================== */
+#neighborhoods-select:focus,
+#neighborhoods-select:hover,
+#cuisines-select:focus,
+#cuisines-select:hover {
+  -webkit-box-shadow: 0 0 10px rgb(247, 187, 214), 0 0 6px rgb(247, 187, 214);
+          box-shadow: 0 0 10px rgb(247, 187, 214), 0 0 6px rgb(247, 187, 214);
+}
+
+/* ========= Restaurant Listing and Reviews Container ========== */
+
 #restaurants-list {
-  background-color: #f3f3f3;
-  list-style: outside none none;
-  margin: 0;
-  padding: 30px 15px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(247, 187, 214);
+  list-style: none;
   text-align: center;
 }
+
 #restaurants-list li {
   background-color: #fff;
-  border: 2px solid #ccc;
-  font-family: Arial,sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  max-width: 340px;
+  border-radius: 5px;
   margin: 15px;
-  min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 10px;
   text-align: left;
-  width: 270px;
 }
+
 #restaurants-list .restaurant-img {
-  background-color: #ccc;
-  display: block;
-  margin: 0;
-  max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
+  border-radius: 5px;
 }
-#restaurants-list li h1 {
-  color: #f18200;
-  font-family: Arial,sans-serif;
-  font-size: 14pt;
+
+#restaurants-list li h2,
+#restaurant-name {
+  color: #ad034d;
+  font-family: "Krona One", sans-serif;
+  font-size: 1em;
   font-weight: 200;
   letter-spacing: 0;
-  line-height: 1.3;
-  margin: 20px 0 10px;
+  line-height: 1.2;
+  margin: 10px;
   text-transform: uppercase;
 }
-#restaurants-list p {
-  margin: 0;
-  font-size: 11pt;
+
+#restaurants-list p,
+#restaurant-address {
+  margin-left: 10px;
+  color: #000;
+  font-size: 1.3em;
 }
+
+#restaurants-list li p:nth-child(odd) {
+  font-weight: bold;
+}
+
 #restaurants-list li a {
-  background-color: orange;
-  border-bottom: 3px solid #eee;
+  background-color: #88003b;
+  border-radius: 5px;
+  font-family: "Righteous", cursive;
+  margin: auto 10px 10px 10px;
   color: #fff;
-  display: inline-block;
-  font-size: 10pt;
-  margin: 15px 0 0;
+  display: block;
+  font-size: 1.2em;
   padding: 8px 30px 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 }
-
-/* ====================== Restaurant Details ====================== */
-.inside header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+#no-match {
+  min-height: 470px;
 }
-.inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
-}
-.inside #map {
-  background-color: #ccc;
-  height: 100%;
-  width: 100%;
-}
-.inside #footer {
-  bottom: 0;
-  position: absolute;
-  width: 50%;
-}
-#restaurant-name {
-  color: #f18200;
-  font-family: Arial,sans-serif;
-  font-size: 20pt;
-  font-weight: 200;
-  letter-spacing: 0;
-  margin: 15px 0 30px;
-  text-transform: uppercase;
-  line-height: 1.1;
-}
-#restaurant-img {
-	width: 90%;
-}
-#restaurant-address {
-  font-size: 12pt;
-  margin: 10px 0px;
-}
-#restaurant-cuisine {
-  background-color: #333;
-  color: #ddd;
-  font-size: 12pt;
-  font-weight: 300;
-  letter-spacing: 10px;
-  margin: 0 0 20px;
-  padding: 2px 0;
+#no-match h2 {
+  padding-bottom: 30px;
   text-align: center;
-  text-transform: uppercase;
-	width: 90%;
-}
-#restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
-}
-#reviews-container {
-  padding: 30px 40px 80px;
 }
 #reviews-container h2 {
-  color: #f58500;
-  font-size: 24pt;
-  font-weight: 300;
-  letter-spacing: -1px;
-  padding-bottom: 1pt;
+  padding: 5px;
+  margin-top: 20px;
+  text-align: center;
 }
+
+#restaurants-list li a:visited {
+  background-color: #bad2ea;
+}
+
+#restaurants-list li a:hover,
+#restaurants-list li a:focus {
+  -webkit-box-shadow: 0 0 8px #ccc, 0 0 8px #ccc;
+          box-shadow: 0 0 8px #ccc, 0 0 8px #ccc;
+  background-color: rgb(247, 187, 214);
+  color: #88003b;
+}
+
+#restaurant-img {
+  display: block;
+}
+
+#restaurant-address {
+  font-size: 1.2em;
+  margin: 10px 0px;
+}
+
+#restaurant-cuisine {
+  background-color: #ad034d;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+}
+#restaurant-hours {
+  padding: 10px;
+  line-height: 1.4em;
+  background-color: rgb(247, 187, 214);
+  min-height: 100%;
+}
+
+#restaurant-hours tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+#restaurant-container,
+#reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#reviews-container {
+  background-color: rgb(247, 187, 214);
+}
+
+#restaurant-col_address {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #reviews-list {
-  margin: 0;
-  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
 }
+
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
-  display: block;
+  border-radius: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   list-style-type: none;
-  margin: 0 0 30px;
-  overflow: hidden;
-  padding: 0 20px 20px;
-  position: relative;
-  width: 85%;
+  margin: 10px;
+  padding: 20px;
+  max-width: 100%;
+  min-width: 300px;
 }
-#reviews-list li p {
-  margin: 0 0 10px;
+
+#goto-map {
+  display: none;
+  padding: 20px;
+  min-height: 70%;
+  margin-left: 10px;
 }
-#restaurant-hours td {
-  color: #666;
+
+#arrow {
+  display: block;
+}
+
+#goto-map a {
+  font-size: 2em;
+  color: #ad034d;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#goto-map a:focus,
+#goto-map a:hover {
+  -webkit-box-shadow: 0 0 10px #ccc, 0 0 10px #ccc;
+          box-shadow: 0 0 10px #ccc, 0 0 10px #ccc;
+  border-radius: 5px;
+}
+
+.review-list_title {
+  letter-spacing: 0.8em;
+}
+
+.reviewer {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ratings {
+  background-color: #88003b;
+  color: white;
+  padding: 3px;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+label {
+  color: white;
+  font-size: 1.6em;
+}
+/* set google maps error message visible*/
+.gm-err-message {
+  color: black;
+}
+/*====== 404.html e offline.html====*/
+.main-404-offline {
+  min-height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title-404-offline {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ad034d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  max-width: 70%;
+}
+.go-home {
+  background-color: #ad034d;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  font-size: 1.5em;
+  max-width: 70%;
+  margin: 30px 0;
+}
+
+/*================Media Queries==========================*/
+
+@media (min-width: 300px) {
+  #restaurants-list li h2 {
+    font-size: 1.5em;
+  }
+  #restaurant-name {
+    font-size: 1em;
+  }
+  .main-title a {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 500px) {
+  #restaurants-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  #restaurant-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    border-top: 10px  solid #fff;
+    border-bottom:  10px  solid #fff;
+  }
+
+  #restaurant-hours {
+    min-width: 30%;
+  }
+  #restaurant-col_address img {
+    display: inline-block;
+    margin: auto;
+  }
+  .main-title a {
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 830px) {
+  .main-title a {
+    font-size: 1.8em;
+  }
+
+  header {
+    background-image: url("../img/food6-small.jpg");
+    background-color: #bad2ea;
+    min-height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #restaurants-list li h2 {
+    font-size: 1.7em;
+  }
+  #restaurant-name {
+    font-size: 1.3em;
+  }
+  .filter-options {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  #neighborhoods-select {
+    margin-right: 30px;
+  }
+  #reviews-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+@media (min-width: 1260px) {
+  #reviews-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #restaurants-list li {
+    max-width: 300px;
+  }
+  .filter-options {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #neighborhoods-select {
+    margin-right: 50px;
+  }
+  header {
+    background-image: url("../img/food6-large.jpg");
+  }
+}
+@media (min-width: 1326px) {
+  #goto-map {
+    display: block;
+  }
+}
+/* Settings for Ultra HD Tv Devices */
+@media (min-width: 2000px) {
+  body {
+    max-width: 2000px;
+    margin: auto;
+  }
+  #maincontent {
+    min-height: auto;
+  }
 }

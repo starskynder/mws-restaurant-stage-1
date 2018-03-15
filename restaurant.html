@@ -1,69 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Normalize.css for better cross-browser consistency -->
-  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Krona+One|Righteous" rel="stylesheet">
   <!-- Main CSS file -->
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Restaurant Info</title>
 </head>
 
 <body class="inside">
-  <!-- Beginning header -->
+ 
   <header>
-    <!-- Beginning nav -->
-    <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
-    </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
-    </ul>
-    <!-- End breadcrumb -->
-    <!-- End nav -->
-  </header>
-  <!-- End header -->
 
-  <!-- Beginning main -->
+    <h1 class="main-title">
+      <a href="/">Restaurant Reviews</a>
+    </h1>
+
+    <nav aria-label="breadcrumbs">
+
+      <ul id="breadcrumb">
+        <li>
+          <a href="/" aria-current="page">Home</a>
+        </li>
+
+      </ul>
+    </nav>
+
+
+
+  </header>
+ 
   <main id="maincontent">
-    <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map"></div>
-    </section>
-    <!-- End map -->
-    <!-- Beginning restaurant -->
+
+   
     <section id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
+      <div id="restaurant-col_address">
+        <h2 id="restaurant-name"></h2>
+        <img id="restaurant-img">
+        <p id="restaurant-cuisine"></p>
+
+        <p id="restaurant-address"></p>
+      </div>
+
+
       <table id="restaurant-hours"></table>
+      <p id="goto-map">
+        <a href="#map" id="map-link">Go to Map
+          <img id="arrow" src="img/map-markers2-300px.png" alt="map markers">
+        </a>
+
+      </p>
     </section>
-    <!-- end restaurant -->
-    <!-- Beginning reviews -->
+    
     <section id="reviews-container">
       <ul id="reviews-list"></ul>
     </section>
-    <!-- End reviews -->
+ 
+    <section id="map-container">
+      <div id="map" role="application"></div>
+    </section>
+   
   </main>
-  <!-- End main -->
-
-  <!-- Beginning footer -->
+  
   <footer id="footer">
-    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017
+    <a href="/">
+      <strong>Restaurant Reviews</strong>
+    </a> All Rights Reserved.
+    <br> Header Photo by Brooke Lark on Unsplash
   </footer>
-  <!-- End footer -->
+  
 
-  <!-- Beginning scripts -->
-  <!-- Database helpers -->
   <script type="text/javascript" src="js/dbhelper.js"></script>
-  <!-- Main javascript file -->
+ 
   <script type="text/javascript" src="js/restaurant_info.js"></script>
-  <!-- Google Maps -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script>
-  <!-- End scripts -->
+ 
 
+
+  <!-- Please insert Your GOOGLE MAPS API_KEY Here -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script>
+  
 </body>
 
 </html>
